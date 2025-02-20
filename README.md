@@ -10,7 +10,7 @@ A Queens game only actually has a single valid solution. In the future I plan on
 - The NN I have so far will make a valid decision that ends up not being part of the final solution. You can't be greedy. In this case you must backtrack for every single wrong move, so you are almost doing a bunch of depth first searching.
 - I have noticed myself/humans will avoid this by using heuristics based on the regions, like they know this entire column is one region so it must be in there, but they don't know where yet... but this information is useful for later. Humans also will go down a path, but then quickly return and shuffle some things around but while keeping "partial solutions" discovered by going down that path even if the original placed queen was wrong.
 - There are more strategies than just this! Brute force DFS with a NN is no better than the SMT/brute force I think.
-- The game is a visual logic game, maybe an RNN/LSTM CNN would be best? I have just been playing with a large MLP poly model, softmax output (n * n) distribution of best placement move.
+- The game is a visual logic game, maybe an RNN/LSTM CNN would be best? I have just been playing with a large MLP policy model, softmax output (n * n) distribution of best placement move.
 
 # Usage
 
@@ -21,3 +21,9 @@ A Queens game only actually has a single valid solution. In the future I plan on
 5. Inspect element on the webpage to bring up the console, paste the `inject.js` code.
 6. ????
 7. Profit.
+
+# Video
+
+[![LinkedIn Queens YouTube](https://img.youtube.com/vi/FVySyyolGsg/0.jpg)](https://www.youtube.com/watch?v=FVySyyolGsg)
+
+I click the solve puzzle button but you do not have to do that, the script will do that. It wasted 7 seconds for me.
